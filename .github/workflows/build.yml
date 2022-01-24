@@ -56,6 +56,27 @@ jobs:
             os: ubuntu-latest
             pyver: cp310-cp310
             piparch: manylinux2014_x86_64
+            
+          # Linux py builds aarch64
+          - name: linux 3.6 aarch64
+            os: ubuntu-latest
+            pyver: cp36-cp36
+            piparch: manylinux2014_aarch64 
+
+          - name: linux 3.7 aarch64
+            os: ubuntu-latest
+            pyver: cp37-cp37m
+            piparch: manylinux2014_aarch64 
+
+          - name: linux 3.8 aarch64
+            os: ubuntu-latest
+            pyver: cp38-cp38
+            piparch: manylinux2014_aarch64 
+
+          - name: linux 3.9 aarch64
+            os: ubuntu-latest
+            pyver: cp39-cp39
+            piparch: manylinux2014_aarch64
 
           # Linux py builds x64
           - name: linux 2.7 i686
